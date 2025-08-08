@@ -15,7 +15,7 @@ steps:
         "push",
         "us-central1-docker.pkg.dev/$PROJECT_ID/random-date-app/app:latest",
       ]
-  - name: "gcr.io/cloud-builders/gcloud:129345068"
+  - name: "gcr.io/cloud-builders/gcloud:latest"
     dir: "CloudRun/"
     waitFor: ["-"]
     entrypoint: "bash"
